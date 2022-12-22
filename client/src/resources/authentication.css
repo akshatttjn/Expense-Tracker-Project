@@ -1,0 +1,36 @@
+.body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.register{
+    height: 100 vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.lottie{
+    height: 400px;
+}
+.row{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.register input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(17, 16, 16, 0.951);
+    color: rgba(255,255,255,0.536);
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+label,a{
+    color:rgba(255,255,255,0.536); ;
+}
+.register h1{
+    font-size: 25px;
+    color: whitesmoke;
+}

@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "antd": "^5.0.7",
+    "aos": "^2.3.4",
+    "axios": "^1.2.1",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "moongoose": "^0.0.5",
+    "nodemon": "^2.0.20",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.5.0",
+    "redux": "^4.2.0"
+  },
+  "name": "expense-tracker-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines":{
+    "node": "v14.17.4",
+    "npm":"9.2.0"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
