@@ -15,9 +15,9 @@
   "name": "expense-tracker-project",
   "version": "1.0.0",
   "main": "index.js",
-  "engines":{
+  "engines": {
     "node": "v14.17.4",
-    "npm":"9.2.0"
+    "npm": "9.2.0"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -25,9 +25,16 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "ts-node-dev --respawn src/Union.ts",
+    "serve": "ts-node-dev src/function.ts",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
 }
